@@ -13,4 +13,5 @@ Note, some layers appear better than others, as many contain multiple bands of d
 ## Future development
 In future, it might be more efficient to conver the tiff data to a png for the selected band data before populating on the map.
 We also need to handle the selection of individual bands within each tif which could be provided via a nested control panel as seen in the top right of the wedpage.
+Potential future development could also follow the tutorial [here](https://www.youtube.com/watch?v=4pIkBHSniv0)
 
