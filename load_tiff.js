@@ -45,8 +45,8 @@ async function load_tif_data(url, map, count) {
     var temp_layer = await new GeoRasterLayer({
       georaster: georaster,
       opacity: 0.7,
-      pixelValuesToColorFn: (values) =>
-        values[0] === 0 ? "#ffffff" : "#000000",
+      //pixelValuesToColorFn: (values) => `${values[0]}`,
+      //`rgb(${values[0]},${values[0]},${values[0]})`,
       resolution: 256, // optional param                                                                                                                                                                                                                                                                                       eter for adjusting display resolution
     });
     //console.log();
@@ -216,7 +216,7 @@ var marker = L.marker([-3.0003737182143184, 60.33378043305085]);
 
 var map = L.map("map", {
   center: L.latLng(60.9, -2.0),
-  zoom: 10,
+  zoom: 2,
   layers: [streets, marker],
   scrollWheelZoom: true,
 });
