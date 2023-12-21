@@ -1,0 +1,22 @@
+{
+  "name": "leaflet_tutorial",
+  "version": "1.0.0",
+  "description": "First attempt at using node and Leaflet to display geotif data on an interactive map",
+  "main": "load_tiff.js",
+  "type": "module",
+  "scripts": {
+    "start": "beefy load_tiff.js:bundle.js --live",
+    "bundle": "browserify load_tiff.js -o bundle.js"
+  },
+  "author": "TJellicoe",
+  "license": "ISC",
+  "dependencies": {
+    "georaster": "^1.6.0",
+    "georaster-layer-for-leaflet": "^3.10.0",
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "beefy": "^2.1.8",
+    "browserify": "^17.0.0"
+  }
+}
